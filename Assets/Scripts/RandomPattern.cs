@@ -177,7 +177,7 @@ public class RandomPattern : MonoBehaviour
 
     void onSave()
     {
-        string FileName = "test";
+        string FileName = ImageInputName;
 
         var path2 = string.Format("Export/{0}.png", FileName);
 
