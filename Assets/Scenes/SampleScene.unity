@@ -353,7 +353,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 017cf552b273a45449acb40a7b218cea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ImageInput: {fileID: 2800000, guid: d9402ec8ec197054493ddbef6f83b975, type: 3}
+  ImageInput: {fileID: 2800000, guid: 71e135e11fa944345a0af20810f9dcd4, type: 3}
   DivX: 10
   DivY: 10
   NoiseAmplitudeRatio: 0.1
