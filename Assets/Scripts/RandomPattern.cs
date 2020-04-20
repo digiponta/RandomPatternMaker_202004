@@ -20,8 +20,8 @@ public class RandomPattern : MonoBehaviour
     private int yy = 0;
 
 
-    private string ImageInputName = "";
-    private string PrevImageInputName = "";
+    private string ImageInputName;
+    private string PrevImageInputName;
     private int PrevDivX = 10;
     private int PrevDivY = 10;
     private float PrevNoiseAmplitudeRatio = 0.1f;
@@ -36,13 +36,14 @@ public class RandomPattern : MonoBehaviour
         xx = width / DivX;
         yy = height / DivY;
 
-        PrevImageInputName = ImageInput.name.ToString();
+        ImageInputName = ImageInput.name.ToString();
+        PrevImageInputName = ImageInputName;
         PrevDivX = DivX;
         PrevDivY = DivY;
         PrevNoiseAmplitudeRatio = NoiseAmplitudeRatio;
 
 
-        //Debug.Log("xx,yy = " + xx +"," +yy );
+        Debug.Log("ImageInput.name = " + ImageInput.name);
 
         if ((DivX>0) && (DivX<=512) && (DivY>0) && (DivY<=512) && (width>0) && (height>0) && (xx>0) && (yy>0) ) {
 
